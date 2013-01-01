@@ -1,6 +1,6 @@
 <ul class="thumbnails">
 <?foreach($products as $product):?>
-<li class="span4">
+<li class="span2">
    <div class="thumbnail">
 	<a href="/media/products/<?=$product->main_img->name?>"><img style="height: 100px;"  class="image" src="/media/products/<?=$product->main_img->name?>"></a>
 	<h4><a href="/products/product/<?=$product->id?>"><?=substr($product->title, 0, 50)?></a></h2>

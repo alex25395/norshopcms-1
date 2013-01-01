@@ -9,7 +9,7 @@ class Controller_Index extends Controller_Base {
 	    parent::before();
         $this->p_session = $this->session->get('products');
 
-		//===Вывод в шаблон мета теги стили и скрипти==========================
+		//===Вывод в шаблон мета теги стили и скрипты==========================
 		$s = ORM::factory('setting',1);
 
 		$this->template->title = $s->title;
@@ -18,18 +18,15 @@ class Controller_Index extends Controller_Base {
 		$this->template->url = $s->url;
 		
 		$this->template->scripts[] = 'js/jquery-1.8.3.min.js';
+		$this->template->scripts[] = 'js/view_images.js';
 		//$this->template->scripts[] = 'js/nivoslider/jquery.nivo.slider.js';
-        //$this->template->scripts[] = 'js/view_images.js';
         
 		//JavaScripts для superfish меню (верхный меню)
 		//$this->template->scripts[] = 'js/tabs.js';
 		//$this->template->scripts[] = 'js/superfish.js';
-				
+			
        // $this->template->styles[] = 'themes/nivo-slider.css';
-		//$this->template->styles[] = 'themes/css/980_grid.css';
-		//$this->template->styles[] = 'themes/css/framework.css';
-		//$this->template->styles[] = 'themes/css/style.css';
-
+	   
 		//получаем верхный меню и вызываем в блоке top_menu ========================
 		$menus = ORM::factory('menu')->find_all();
 		$top_menu = View::factory('v_top_menu',array('menus'=>$menus));

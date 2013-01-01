@@ -35,7 +35,7 @@
 	</div>
 	
 	<div class="row">
-		<div class="span3"><? foreach($block_left as $lblock){print $lblock;}?></div>
+		<div class="span3"><? foreach($block_left as $lblock){print $lblock;}?><?=$minicart?></div>
 		<div class="span9"><? foreach($block_center as $bcenter){print $bcenter;}?></div>
 	</div>
 

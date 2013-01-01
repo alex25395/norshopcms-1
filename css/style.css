@@ -1,0 +1,8 @@
+.form_login  ul li{
+width:400px;
+height:300px;
+margin-left:0;
+list-style:none;
+background:red;
+border:1px solid lightgray;
+}
