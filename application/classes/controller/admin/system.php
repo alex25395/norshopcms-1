@@ -7,14 +7,10 @@ class Controller_Admin_System extends Controller_Admin_Index{
 		parent::before();
 		//Вывод в шаблон
 		$this->template->page_title = 'Система';
-	
 	}
 
 	public function action_index(){
-
-
 		$this->template->block_center = View::factory('/admin/v_system');
-
 	}	
 
 public function action_settings(){
@@ -24,7 +20,7 @@ public function action_settings(){
 		}
 		if(isset($_POST['submit'])){
 
-			$data = Arr::extract($_POST, array('title', 'url', 'meta_description', 'meta_keywords'));
+			$data = Arr::extract($_POST, array('title', 'url', 'email', 'meta_description', 'meta_keywords'));
 		
 			$s->values($data);
 				
@@ -37,14 +33,13 @@ public function action_settings(){
 			}
 
 		}
-		
-		$content = View::factory('/admin/v_settings')
+		$settings = ORM::factory('setting',1);
+		$content = View::factory('/admin/v_settings', array('settings'=>$settings))
 					->bind('errors', $errors)
 					->bind('data',$data);
 		
 	
-	$settings = ORM::factory('setting')->find_all();	
-	$this->template->block_center = View::factory('admin/v_settings',array('settings'=>$settings)) ;
+		$this->template->block_center = $content ;
 	
 	}
 		
