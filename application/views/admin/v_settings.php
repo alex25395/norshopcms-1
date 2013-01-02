@@ -1,3 +1,4 @@
+<p>Настройки сайта</p>
 <div id="settings">
 <form action="" method="post">
 <ul>
