@@ -57,7 +57,7 @@ class Controller_Admin_Menus extends Controller_Admin_Index{
 	
 
 	
-		public function action_editgroup(){
+	public function action_editgroup(){
 
 	$id = (int) $this->request->param('id');
     $m = ORM::factory('menugroup', $id);
@@ -111,7 +111,7 @@ class Controller_Admin_Menus extends Controller_Admin_Index{
 	public function action_add(){
 
 	if(isset($_POST['submit'])){
-		$data = Arr::extract($_POST, array('menu_title', 'menu_type', 'menu_alias', 'menu_url'));
+		$data = Arr::extract($_POST, array('menu_group_id', 'menu_title', 'menu_type', 'menu_alias', 'menu_url'));
 		$m = ORM::factory('menu');
 		$m->values($data);
 
@@ -158,8 +158,10 @@ class Controller_Admin_Menus extends Controller_Admin_Index{
 	
 	}
 	
+	$data = $m->as_array();
 	
-	$content = View::factory('/admin/v_menus_add');
+	$content = View::factory('/admin/v_menus_add')
+	->bind('data', $data);
 	$this->template->block_center = $content;
 	}
 

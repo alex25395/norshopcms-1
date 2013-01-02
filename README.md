@@ -4,7 +4,7 @@
 </head>
 
 <body>
-<h1>NorShopCMS PHP Shop Script Интернет Магазин на PHP Kohana MVC Framework </h1>
+<h1>NorShopCMS PHP Shop Script Интернет Магазин на PHP Kohana MVC Framework</h1>
 Демо можно посмотреть <a href="http://nordev.pusku.com">http://nordev.pusku.com</a>
 
 <h2>Вожможности сайта</h2>
