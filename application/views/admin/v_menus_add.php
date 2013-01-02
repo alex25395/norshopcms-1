@@ -26,8 +26,8 @@ $(document).ready(function(){
 
 <form  method="post" action="">
 <ul id="forms">
-<li><label>Название: <input class="g-4" type="text" name="menu_title" /></label></li> 
-<li><label>Алиас или ссылка: <input class="g-4"  type="text" name="menu_alias" /></label> &nbsp; (ссылка на Личный кабинет login, Ссылка на cтатей articles)</li> 
+<li><label>Название: <input class="g-4" type="text" name="menu_title" value="<?=$data['menu_title']?>" /></label></li> 
+<li><label>Алиас или ссылка: <input class="g-4"  type="text" name="menu_alias" value="<?=$data['menu_alias']?>" /></label> &nbsp; (ссылка на Личный кабинет login, Ссылка на cтатей articles)</li> 
 <li>
 <label>Тип меню
 <select id="menu_type" name="menu_type">
@@ -37,5 +37,6 @@ $(document).ready(function(){
  </label>
 </li>
 </ul>
+<input type="text" name="menu_group_id" value="<?=Request::current()->param('id');?>">
 <input class="f-bu" type="submit" name="submit" value="  Сохранить  ">
 </form>
