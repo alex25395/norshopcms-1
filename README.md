@@ -1,38 +1,27 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-  <title>NorShopCMS PHP Shop Script Интернет Магазин на PHP Kohana MVC Framework </title>
-</head>
-
-<body>
-<h1>NorShopCMS PHP Shop Script Интернет Магазин на PHP Kohana MVC Framework </h1>
-Демо можно посмотреть <a href="http://nordev.pusku.com">http://nordev.pusku.com</a>
-
-<h2>Вожможности сайта</h2>
-<h4>Привликателный и адаптивный дизайн Bootstrap от Twitter'а <a href="http://twitter.github.com/bootstrap/">http://twitter.github.com/bootstrap/</a>
-<h4>Дизайн Админки 960 gird system + Css Framework <a href="http://agat.github.com/css-framework">http://agat.github.com/css-framework</a></h3>
-
-
-<h3>Вожможности и функционал NorShopCMS интернет магазина</h3>
+<p>NorShopCMS PHP Shop Script Интернет Магазин на PHP Kohana MVC Framework</p>
+<h1>NorShopCMS PHP Shop Script Интернет Магазин на PHP Kohana MVC Framework</h1>
+<p>Демо можно посмотреть <a href="http://nordev.pusku.com">http://nordev.pusku.com</a></p>
+<h2> Возможности сайта</h2>
+<h4>Привлекателный и адаптивный дизайн Bootstrap от Twitter'а <a href="http://twitter.github.com/bootstrap/">http://twitter.github.com/bootstrap/</a></h4>
+<h4>Дизайн Админки 960 gird system + Css Framework <a href="http://agat.github.com/css-framework">http://agat.github.com/css-framework</a></h4>
+<h3> Возможности и функционал NorShopCMS интернет магазина</h3>
 <ul>
-<li>Регистраци и Авторизация ползователей</li>
-<li>Профиль ползователей</li>
-<li>Катаог товаров</li>
-<li>Пойск товаров</li>
-<li>Карзина товаров</li>
+<li> Регистрация и Авторизация пользователей </li>
+<li>Профиль пользователей </li>
+<li>Каталог товаров</li>
+<li>Поиск товаров</li>
+<li>Корзина товаров</li>
 <li>Обратная связь</li>
 </ul>
-
-
-<h3>Панел адмистратора</h3>
+<h3>Панель администратора </h3>
 <ul>
-<li>Устанолненна удобный редактор TinyMCE и два варянтов менеджер изображений</li>
-<li>Добавление, редактирование и удаление ползователеы</li>
-<li>Добавление, редактирование и удаление меню</li>
-<li>Добавление, редактирование и удаление каталога товаров</li>
-<li>
-3 варианта выбора шаблонов категори товаров
+<li> Установлен удобный редактор TinyMCE и два вариантов менеджер изображений</li>
+<li>Добавление, редактирование и удаление пользовательей</li>
+<li>Добавление, редактирование и удаление верхний меню</li>
+<li>Добавление, редактирование и удаление каталога</li>
+<li>3 варианта выбора шаблонов категории товаров
 <ul>
-<li>Абычный шаблон товаров</li>
+<li>Обычный шаблон товаров</li>
 <li>Шаблон список</li>
 <li>Колоночный шаблон товаров</li>
 </ul>
@@ -41,7 +30,8 @@
 <li>Добавление, редактирование и удаление производителей</li>
 <li>Добавление, редактирование и удаление страниц</li>
 <li>Добавление, редактирование и удаление статей</li>
-<li>Добавление и удаление Баннров главной странице</li>
+<li>Добавление и удаление Баннеров главной странице</li>
 <li>Список стран и регионов</li>
 </ul>
-</body>
+<p><strong>Для развития проекта буду благодарен если кто поможет и благодарит. Мой счет на яндекс деньги 410011599582389</strong></p>
+<p><strong><br /></strong></p>
