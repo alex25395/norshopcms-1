@@ -5,7 +5,7 @@
 <?
 if($errors){
 	foreach($errors as $error){
-	print '<div class="error_msg">'.$error.'</div>';
+	print '<div class="f-message f-message-error">'.$error.'</div>';
 	}
 }
 ?>

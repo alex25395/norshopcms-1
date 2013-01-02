@@ -1,7 +1,5 @@
-<br/>
 <p align="right">
-<img src="/themes/images/add.png" alt="Добавить" />
-<a href="users/add">Добавить</a>
+<a href="users/add"><img src="/themes/images/add.png" alt="Добавить" />Добавить</a>
 </p>
 
 <table class="border">
@@ -22,8 +20,8 @@ $i++;
 	print	'</td>
 		<td>'.$user->status.'</td>
 		<td>
-        <a href="users/edit/'.$user->id.'"><img src="/themes/images/edit.png" alt="" /></a>
-        <a href="users/delete/'.$user->id.'"><img src="/themes/images/delete.png" alt="" /></a>
+        <a href="users/edit/'.$user->id.'"><img src="/themes/images/edit.png" alt="Редактировать" /></a>
+        <a href="users/delete/'.$user->id.'"><img src="/themes/images/delete.png" alt="Удалить" /></a>
     </td>
 	</tr>';
 }

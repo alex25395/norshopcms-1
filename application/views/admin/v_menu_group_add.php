@@ -1,4 +1,4 @@
-<div style="padding:10px;" class="border">
+<div>
 	<form method="post" action=""><br>
 	<label>Название: <input class="g-4" type="text" name="menu_group_title" /></label><br><br>
 	<label>Пазиция: &nbsp; <input class="g-4"  type="text" name="menu_group_position" /></label><br><br>

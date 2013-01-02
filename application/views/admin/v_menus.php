@@ -1,7 +1,6 @@
-
 <p align="right">
 <img src="/themes/images/add.png" alt="Добавить" />
-<a href="<?=$url?>/menus/add">Добавить</a>
+<a href="<?=$url?>/menus/add/<?=Request::current()->param('id');?>">Добавить</a>
 </p>
 <br>
 <table class="border">

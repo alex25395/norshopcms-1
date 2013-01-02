@@ -1,4 +1,4 @@
-<p>Настройки сайта</p>
+<h3>Настройки сайта</h3>
 <div id="settings">
 <form action="" method="post">
 <ul>
