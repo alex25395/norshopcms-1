@@ -1,77 +1,45 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ru" xml:lang="ru">
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7" lang="ru"><![endif]-->
+<!--[if IE 7]><html class="lt-ie9 lt-ie8" lang="ru"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9" lang="ru"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="ru"><!--<![endif]-->
 <head>
-<title>Панель управления</title>
+<title><?=$title; ?> <?=$page_title; ?></title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="<?=$keywords?>" />
+<meta name="description" content="<?=$description; ?>" />
+<base href="<?=$url?>">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+
 <?foreach ($styles as $file_style):?>
 <?=html::style($file_style)?>
 <?endforeach?>
 <?foreach ($scripts as $file_script):?>
 <?=html::script($file_script)?>
 <?endforeach?>
-
-<script type="text/javascript"><!--
-$(document).ready(function() {
-	$('#menu > ul').superfish({
-		hoverClass	 : 'sfHover',
-		pathClass	 : 'overideThisToUse',
-		delay		 : 0,
-		animation	 : {height: 'show'},
-		speed		 : 'normal',
-		autoArrows   : false,
-		dropShadows  : false, 
-		disableHI	 : false, /* set to true to disable hoverIntent detection */
-		onInit		 : function(){},
-		onBeforeShow : function(){},
-		onShow		 : function(){},
-		onHide		 : function(){}
-	});
-	
-	$('#menu > ul').css('display', 'block');
-});
- 
-//--></script> 
+<script src="/js/bootstrap.min.js"></script>
+<!--[if lt IE 9]>
+			<script type="text/javascript" src="js/html5.js"></script>
+<![endif]-->
 </head>
 <body>
-<div id="wrapper">
-<div id="header">
-<a href="/" target="_blank">Магазин</a> <a href="/admin/users/edit/<?=$admin_info?>"><?=$admin_info->first_name;?></a> ( <a href="/admin/auth/logout">Выход</a> )
-</div>
-
-	<div id="container">
-		<div id="menu">
-		<ul class="left" style="display: none;">
-		  <li ><a href="/admin" class="top">Панель управления</a></li>
-		  <li id="/admin/catalog"><a class="top">Каталог</a>
-			<ul>
-			  <li><a href="/admin/category">Категории</a></li>
-			  <li><a href="/admin/products">Товары</a></li>
-			  <li><a href="/admin/manufactures">Производители</a></li>
-			</ul>
-		  </li>
-		  <li id="extension"><a href="/admin/pages" class="top">Страницы</a></li>
-		   <li id="extension"><a href="/admin/articles" class="top">Статьи</a></li>
-		  <li id="system"><a  class="top">Система</a>
-			<ul>
-			<li><a href="/admin/system">Настройки</a></li>
-			<li><a href="/admin/users">Пользовательи</a></li>
-			<li><a href="/admin/banners">Баннеры</a></li>
-		   </li>
-
-			  <li><a class="parent">Локализация</a>
-				<ul>
-
-				  <li><a href="/admin/countries">Страны</a></li>
-				  <li><a href="">Регионы</a></li>
-				</ul>
-			  </li>
-			</ul>
-		  </li>
-		</ul>
-		</div>
-		<div id="content">
-			<h2><?=$page_title ?></h2>
-			<?=$block_center ?>
-		</div>
+<div class="container">
+	<div class="row">
+		<div class="span12"><?=$top_menu?></div>
 	</div>
+	<div class="row">
+		<div class="span8"><?=$search_form?></div>
+		<div class="span4"><?=$userarea?></div>
+	</div>
+	
+	<div class="row">
+		<div class="span3"><? if($block_left) { foreach($block_left as $lblock){print $lblock;} }?><?=$minicart?></div>
+		<div class="span9"><? if($block_center){ foreach($block_center as $bcenter){print $bcenter;} }?></div>
+	</div>
+
 </div>
-</body></html>
+
+</body>
+</html>
