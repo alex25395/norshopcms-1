@@ -27,7 +27,7 @@ float:right; padding:5px;
 <li>Старый пароль * <input type="password" name="newpassword"></li>
 <li>Новый пароль * <input type="password" name="password"></li>
 <li>Павторить пароль *  <input type="password" name="password_confirm"></li>
-<li><input type="submit" name="submit" value=" Сахранить "></li>
+<li><input type="submit" name="submit" value=" Сохранить "></li>
 </ul>
 </form>
 </div>
